@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌱 Agro Forte</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte</h1>
+            <p>Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+            <button class="cta-btn">Descubra Mais</button>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Agro Forte</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>
+                        A Agro Forte é uma iniciativa dedicada a revolucionar a agricultura brasileira através de práticas sustentáveis que equilibram a produção agrícola com a preservação do meio ambiente.
+                    </p>
+                    <p>
+                        Acreditamos que é possível ser altamente produtivo sem comprometer o futuro do nosso planeta. Nossa missão é levar tecnologia verde e conhecimento para os produtores rurais.
+                    </p>
+                </div>
+                <div class="sobre-image">
+                    <div class="image-placeholder">🌾</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <h2>Nossas Soluções</h2>
+            <div class="solucoes-grid">
+                <div class="solucao-card">
+                    <div class="icon">♻️</div>
+                    <h3>Agricultura Regenerativa</h3>
+                    <p>Práticas que restauram a saúde do solo e aumentam a biodiversidade da sua propriedade.</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="icon">💧</div>
+                    <h3>Gestão de Água</h3>
+                    <p>Sistemas eficientes de irrigação que reduzem desperdício e preservam recursos hídricos.</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="icon">🌍</div>
+                    <h3>Energia Limpa</h3>
+                    <p>Soluções de energia renovável adaptadas para propriedades rurais sustentáveis.</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="icon">📊</div>
+                    <h3>Monitoramento Inteligente</h3>
+                    <p>Tecnologia IoT para acompanhar o desempenho ambiental e agrícola em tempo real.</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="icon">🌿</div>
+                    <h3>Manejo Integrado</h3>
+                    <p>Técnicas de controle biológico de pragas sem agressão ao ecossistema.</p>
+                </div>
+                <div class="solucao-card">
+                    <div class="icon">🎓</div>
+                    <h3>Treinamento & Consultoria</h3>
+                    <p>Capacitação profissional para implementar práticas sustentáveis na sua fazenda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <h2>Benefícios da Sustentabilidade Agrícola</h2>
+            <div class="beneficios-list">
+                <div class="beneficio-item">
+                    <div class="beneficio-number">1</div>
+                    <h3>Produtividade Aumentada</h3>
+                    <p>Solos regenerados produzem colheitas mais abundantes e de melhor qualidade</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-number">2</div>
+                    <h3>Redução de Custos</h3>
+                    <p>Menos dependência de insumos químicos reduz despesas operacionais</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-number">3</div>
+                    <h3>Mercado Premium</h3>
+                    <p>Produtos certificados como sustentáveis têm maior valor agregado</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-number">4</div>
+                    <h3>Preservação Ambiental</h3>
+                    <p>Proteção da biodiversidade e recursos naturais para futuras gerações</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-card">
+                <h3>500+</h3>
+                <p>Propriedades Transformadas</p>
+            </div>
+            <div class="stat-card">
+                <h3>45%</h3>
+                <p>Aumento Médio de Produtividade</p>
+            </div>
+            <div class="stat-card">
+                <h3>1M+</h3>
+                <p>Hectares Regenerados</p>
+            </div>
+            <div class="stat-card">
+                <h3>100K+</h3>
+                <p>Vidas Impactadas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <input type="text" placeholder="Sua Propriedade">
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <p><strong>Email:</strong> contato@agroforte.com.br</p>
+                    <p><strong>Telefone:</strong> (11) 9999-9999</p>
+                    <p><strong>Endereço:</strong> Brasília, DF - Brasil</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
+            <p>Desenvolvido com 💚 para um futuro melhor</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
