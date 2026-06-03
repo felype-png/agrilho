@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28547402/README.md)
 # 🌱 Agro Forte - Futuro Sustentável
 
 Um site moderno e responsivo dedicado à sustentabilidade agrícola, promovendo o equilíbrio entre produção e preservação do meio ambiente.
