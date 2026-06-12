@@ -3,184 +3,1035 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - Futuro Sustentável</title>
+    <title>Agro Forte - Futuro Sustentável | Equilíbrio entre Produção e Meio Ambiente</title>
+    <meta name="description" content="Agro Forte: soluções inovadoras para agricultura sustentável que equilibram produção agrícola com preservação ambiental.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navegação -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <h1>🌱 Agro Forte</h1>
+            <div class="navbar-brand">
+                <i class="fas fa-leaf"></i>
+                <span class="brand-text">Agro Forte</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#solucoes">Soluções</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Agro Forte</h1>
-            <p>Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
-            <button class="cta-btn">Descubra Mais</button>
+            <h1 class="hero-title">Agro Forte</h1>
+            <p class="hero-subtitle">Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+            <p class="hero-description">
+                A agricultura do século XXI não é apenas sobre produzir mais. É sobre produzir de forma inteligente, respeitando 
+                o solo que plantamos, a água que utilizamos e o ar que respiramos. Na Agro Forte, acreditamos que sustentabilidade 
+                e produtividade caminham juntas, criando um futuro onde os agricultores prosperam enquanto o planeta se recupera.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('solucoes').scrollIntoView({ behavior: 'smooth' })">
+                    Conhecer Soluções
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' })">
+                    Entre em Contato
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-sprout"></i>
+            </div>
         </div>
     </section>
 
-    <!-- Sobre Section -->
+    <!-- SOBRE SECTION -->
     <section id="sobre" class="sobre">
         <div class="container">
-            <h2>Sobre Agro Forte</h2>
+            <div class="section-header">
+                <h2>Sobre Agro Forte</h2>
+                <div class="header-line"></div>
+            </div>
+            
             <div class="sobre-content">
                 <div class="sobre-text">
+                    <h3>Nossa História e Compromisso</h3>
                     <p>
-                        A Agro Forte é uma iniciativa dedicada a revolucionar a agricultura brasileira através de práticas sustentáveis que equilibram a produção agrícola com a preservação do meio ambiente.
+                        Fundada em 2009, a Agro Forte surgiu de uma visão clara: transformar a agricultura brasileira através de práticas sustentáveis 
+                        que respeitam o meio ambiente sem sacrificar a produtividade. Durante 15 anos, acompanhamos a transformação de centenas de 
+                        propriedades rurais, gerando renda para os agricultores e preservando os recursos naturais para as próximas gerações.
                     </p>
                     <p>
-                        Acreditamos que é possível ser altamente produtivo sem comprometer o futuro do nosso planeta. Nossa missão é levar tecnologia verde e conhecimento para os produtores rurais.
+                        Nosso compromisso vai além de oferecer soluções tecnológicas. Nós acreditamos na educação, no acompanhamento contínuo e na 
+                        construção de parcerias duradouras com nossos clientes. Cada propriedade é única, e cada desafio requer uma solução personalizada. 
+                        É isso que nos torna diferentes no mercado.
                     </p>
+                    <p>
+                        Hoje, Agro Forte é reconhecida como líder em inovação agrícola sustentável, com presença em 14 estados brasileiros, certificações 
+                        internacionais e uma comunidade de mais de 500 propriedades transformadas. Mas nosso trabalho está longe de terminar. O futuro da 
+                        agricultura é sustentável, e nós estamos liderando essa transformação.
+                    </p>
+                    <div class="stats-mini">
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Propriedades Certificadas</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15 Anos</h4>
+                            <p>De Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50K+</h4>
+                            <p>Hectares Transformados</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="sobre-image">
-                    <div class="image-placeholder">🌾</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Soluções Section -->
-    <section id="solucoes" class="solucoes">
-        <div class="container">
-            <h2>Nossas Soluções</h2>
-            <div class="solucoes-grid">
-                <div class="solucao-card">
-                    <div class="icon">♻️</div>
-                    <h3>Agricultura Regenerativa</h3>
-                    <p>Práticas que restauram a saúde do solo e aumentam a biodiversidade da sua propriedade.</p>
-                </div>
-                <div class="solucao-card">
-                    <div class="icon">💧</div>
-                    <h3>Gestão de Água</h3>
-                    <p>Sistemas eficientes de irrigação que reduzem desperdício e preservam recursos hídricos.</p>
-                </div>
-                <div class="solucao-card">
-                    <div class="icon">🌍</div>
-                    <h3>Energia Limpa</h3>
-                    <p>Soluções de energia renovável adaptadas para propriedades rurais sustentáveis.</p>
-                </div>
-                <div class="solucao-card">
-                    <div class="icon">📊</div>
-                    <h3>Monitoramento Inteligente</h3>
-                    <p>Tecnologia IoT para acompanhar o desempenho ambiental e agrícola em tempo real.</p>
-                </div>
-                <div class="solucao-card">
-                    <div class="icon">🌿</div>
-                    <h3>Manejo Integrado</h3>
-                    <p>Técnicas de controle biológico de pragas sem agressão ao ecossistema.</p>
-                </div>
-                <div class="solucao-card">
-                    <div class="icon">🎓</div>
-                    <h3>Treinamento & Consultoria</h3>
-                    <p>Capacitação profissional para implementar práticas sustentáveis na sua fazenda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefícios Section -->
-    <section id="beneficios" class="beneficios">
-        <div class="container">
-            <h2>Benefícios da Sustentabilidade Agrícola</h2>
-            <div class="beneficios-list">
-                <div class="beneficio-item">
-                    <div class="beneficio-number">1</div>
-                    <h3>Produtividade Aumentada</h3>
-                    <p>Solos regenerados produzem colheitas mais abundantes e de melhor qualidade</p>
-                </div>
-                <div class="beneficio-item">
-                    <div class="beneficio-number">2</div>
-                    <h3>Redução de Custos</h3>
-                    <p>Menos dependência de insumos químicos reduz despesas operacionais</p>
-                </div>
-                <div class="beneficio-item">
-                    <div class="beneficio-number">3</div>
-                    <h3>Mercado Premium</h3>
-                    <p>Produtos certificados como sustentáveis têm maior valor agregado</p>
-                </div>
-                <div class="beneficio-item">
-                    <div class="beneficio-number">4</div>
-                    <h3>Preservação Ambiental</h3>
-                    <p>Proteção da biodiversidade e recursos naturais para futuras gerações</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Estatísticas Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stat-card">
-                <h3>500+</h3>
-                <p>Propriedades Transformadas</p>
-            </div>
-            <div class="stat-card">
-                <h3>45%</h3>
-                <p>Aumento Médio de Produtividade</p>
-            </div>
-            <div class="stat-card">
-                <h3>1M+</h3>
-                <p>Hectares Regenerados</p>
-            </div>
-            <div class="stat-card">
-                <h3>100K+</h3>
-                <p>Vidas Impactadas</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <div class="contato-content">
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu Email" required>
-                    <input type="text" placeholder="Sua Propriedade">
-                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
-                <div class="contato-info">
-                    <h3>Informações de Contato</h3>
-                    <p><strong>Email:</strong> contato@agroforte.com.br</p>
-                    <p><strong>Telefone:</strong> (11) 9999-9999</p>
-                    <p><strong>Endereço:</strong> Brasília, DF - Brasil</p>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">LinkedIn</a>
+                    <div class="image-placeholder about-img">
+                        <i class="fas fa-tree"></i>
+                        <p>Agricultura Sustentável em Ação</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- SOLUÇÕES SECTION -->
+    <section id="solucoes" class="solucoes">
         <div class="container">
-            <p>&copy; 2026 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
-            <p>Desenvolvido com 💚 para um futuro melhor</p>
+            <div class="section-header">
+                <h2>Nossas Soluções</h2>
+                <p class="section-subtitle">Inovações que transformam a agricultura moderna</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="solucoes-grid">
+                <!-- Solução 1 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Agricultura Regenerativa</h3>
+                    <p>
+                        Técnicas que restauram a saúde do solo, aumentando sua fertilidade natural e capturando carbono atmosférico. 
+                        Rotação de culturas, cobertura vegetal e redução do revolvimento do solo são pilares dessa abordagem revolucionária 
+                        que transforma degradação em regeneração.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Aumento de matéria orgânica do solo</li>
+                        <li><i class="fas fa-check"></i> Redução de custos com insumos em 40%</li>
+                        <li><i class="fas fa-check"></i> Maior retenção de água no solo</li>
+                        <li><i class="fas fa-check"></i> Captura de carbono atmosférico</li>
+                    </ul>
+                </div>
+
+                <!-- Solução 2 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Gestão Inteligente de Água</h3>
+                    <p>
+                        Sistemas de irrigação de precisão com IoT que monitoram umidade do solo em tempo real, temperatura e previsões climáticas. 
+                        Cada gota conta quando 70% da água doce global é destinada à agricultura. Nossa solução garante economia de até 40% de água 
+                        mantendo ou aumentando a produtividade.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Sensores IoT em tempo real</li>
+                        <li><i class="fas fa-check"></i> Economia de 40% de água</li>
+                        <li><i class="fas fa-check"></i> Automatização completa da irrigação</li>
+                        <li><i class="fas fa-check"></i> Redução de 35% em custos hídricos</li>
+                    </ul>
+                </div>
+
+                <!-- Solução 3 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Energia Limpa Agrícola</h3>
+                    <p>
+                        Instalação de painéis solares e sistemas eólicos em propriedades rurais, transformando-as em produtoras de energia. 
+                        Gerando energia própria, reduzindo custos operacionais drasticamente e até vendendo excedentes à rede elétrica, 
+                        criando uma fonte de renda adicional sustentável.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Painéis solares e sistemas eólicos</li>
+                        <li><i class="fas fa-check"></i> Redução de 60% em custos energéticos</li>
+                        <li><i class="fas fa-check"></i> Revenda de energia excedente à rede</li>
+                        <li><i class="fas fa-check"></i> Retorno do investimento em 5-7 anos</li>
+                    </ul>
+                </div>
+
+                <!-- Solução 4 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Controle Biológico de Pragas</h3>
+                    <p>
+                        Eliminação de agrotóxicos através de predadores naturais, bactérias benéficas e manejo integrado de pragas. 
+                        Produção mais limpa com certificação orgânica e melhor valor de mercado. Seus produtos ganham identidade premium 
+                        e acesso a consumidores conscientes dispostos a pagar mais.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Zero agrotóxicos ou redução de 90%</li>
+                        <li><i class="fas fa-check"></i> Certificação orgânica facilitada</li>
+                        <li><i class="fas fa-check"></i> Premium de preço de 30-50%</li>
+                        <li><i class="fas fa-check"></i> Recuperação da biodiversidade local</li>
+                    </ul>
+                </div>
+
+                <!-- Solução 5 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Agricultura de Precisão</h3>
+                    <p>
+                        Drones com câmeras multiespectrais, sensores avançados e inteligência artificial para monitorar cada talhão detalhadamente. 
+                        Aplicação de insumos apenas onde é necessário, reduzindo resíduos, otimizando recursos e aumentando a eficiência produtiva 
+                        através de dados concretos e análises preditivas.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Mapeamento aéreo por drone de alta resolução</li>
+                        <li><i class="fas fa-check"></i> IA para previsões de safra</li>
+                        <li><i class="fas fa-check"></i> Redução de desperdícios em 25-30%</li>
+                        <li><i class="fas fa-check"></i> Aumento de produtividade de 15-20%</li>
+                    </ul>
+                </div>
+
+                <!-- Solução 6 -->
+                <div class="solucao-card">
+                    <div class="card-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Economia Circular</h3>
+                    <p>
+                        Aproveitamento inteligente de resíduos agrícolas para compostagem, produção de biogás e adubação natural. 
+                        Transformando o que seria descarte custoso em recurso valioso para a próxima colheita. Fechar o ciclo produtivo 
+                        é essencial para a sustentabilidade e a rentabilidade da propriedade.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Compostagem eficiente de resíduos</li>
+                        <li><i class="fas fa-check"></i> Produção de biogás para energia</li>
+                        <li><i class="fas fa-check"></i> Zero desperdício na propriedade</li>
+                        <li><i class="fas fa-check"></i> Redução de custos com adubação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS SECTION -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por Que Escolher Agro Forte?</h2>
+                <p class="section-subtitle">Benefícios comprovados para sua propriedade e para o planeta</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Aumento de Produtividade</h3>
+                    <p>
+                        Nossos clientes relatam aumento de 25-40% na produtividade já no primeiro ano de implementação. 
+                        Solos mais saudáveis produzem culturas mais vigorosas, com melhor resistência natural a pragas e doenças. 
+                        Maior qualidade do produto final significa melhor preço no mercado e mais lucro na colheita.
+                    </p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Preservação Ambiental</h3>
+                    <p>
+                        Redução de 70% nas emissões de carbono, conservação de recursos hídricos cruciais e proteção da biodiversidade local. 
+                        Sua propriedade se torna um ativo ambiental, qualificando-se para certificações ESG e acesso a financiamentos verdes. 
+                        Deixando um planeta melhor para as próximas gerações enquanto agrega valor ao negócio.
+                    </p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Redução Significativa de Custos</h3>
+                    <p>
+                        Economia média de 30-50% em insumos agrícolas caros, combustível para irrigação e água. 
+                        ROI comprovado em até 2 anos com nossas soluções integradas. Menos gastos operacionais significa mais lucro 
+                        direto na conta bancária, melhorando o fluxo de caixa da propriedade de forma imediata.
+                    </p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificações Internacionais</h3>
+                    <p>
+                        Acesso facilitado a certificações ESG, orgânicas, de carbono neutro e de sustentabilidade que abrem portas para mercados premium. 
+                        Agregando valor superior aos seus produtos e diferenciando sua marca no mercado globalizado. 
+                        Produtos certificados sustentáveis têm demanda crescente e preços diferenciados.
+                    </p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Suporte Especializado 24/7</h3>
+                    <p>
+                        Equipe técnica de agrônomos e especialistas disponível 24/7 para orientação, treinamento e acompanhamento contínuo. 
+                        Visitas periódicas à sua propriedade, consultoria personalizada e resolução rápida de problemas. 
+                        Seu sucesso é nossa prioridade e medida de sucesso.
+                    </p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Acesso a Novos Mercados</h3>
+                    <p>
+                        Produtos certificados sustentáveis têm demanda crescente em mercados nacionais e internacionais. 
+                        Aumentando suas oportunidades comerciais e possibilidade de exportação. Conexões com traders, cooperativas e 
+                        distribuidoras premium abrem novas possibilidades de negócio e maior estabilidade de renda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS SECTION -->
+    <section id="tecnologias" class="tecnologias">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnologias Utilizadas</h2>
+                <p class="section-subtitle">Inovação de ponta ao serviço da sustentabilidade agrícola</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>IoT e Sensores Inteligentes</h3>
+                    <p>
+                        Monitoramento em tempo real de solo, temperatura, umidade, nutrientes e pH com sensores inteligentes distribuídos 
+                        estrategicamente nos talhões. Dados coletados a cada minuto, processados em nuvem e transformados em insights 
+                        acionáveis que guiam decisões agrícolas precisas.
+                    </p>
+                    <span class="tech-badge">Conectado</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>
+                        Análise preditiva para previsão de pragas, doenças, estimativa de safra e otimização de recursos com algoritmos 
+                        de machine learning avançados treinados com dados de milhões de hectares. Previsões precisas reduzem riscos 
+                        e melhoram a tomada de decisão estratégica.
+                    </p>
+                    <span class="tech-badge">Inteligente</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-drone"></i>
+                    </div>
+                    <h3>Drones e Visão Computacional</h3>
+                    <p>
+                        Mapeamento aéreo de propriedades com resolução de centímetros usando drones equipados com câmeras multiespectrais. 
+                        Identificação de problemas antes que afetem a safra, visualização de padrões de crescimento e detecção de pragas 
+                        em estágio inicial, permitindo intervenções precisas e rápidas.
+                    </p>
+                    <span class="tech-badge">Aéreo</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplicativo Mobile Intuitivo</h3>
+                    <p>
+                        Controle total de sua produção na palma da mão com app nativo para iOS e Android. Dashboard completo com gráficos, 
+                        alertas, histórico de operações e recomendações de ação. Conecte-se com sua fazenda de qualquer lugar, 
+                        a qualquer hora, com informações sempre atualizadas.
+                    </p>
+                    <span class="tech-badge">Mobile</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing Seguro</h3>
+                    <p>
+                        Infraestrutura em nuvem escalável e segura para processar grandes volumes de dados agrícolas com redundância total. 
+                        Servidores em múltiplas regiões garantem disponibilidade 99.99%, backups automáticos e conformidade com LGPD e 
+                        normas internacionais de proteção de dados.
+                    </p>
+                    <span class="tech-badge">Seguro</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Big Data Analytics Avançado</h3>
+                    <p>
+                        Análise de históricos completos de produções para identificar padrões, correlações e oportunidades de otimização. 
+                        Comparação com propriedades similares, benchmarking de performance e recomendações baseadas em machine learning 
+                        que identificam as melhores práticas para seu contexto específico.
+                    </p>
+                    <span class="tech-badge">Dados</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTATÍSTICAS SECTION -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-target="500">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">+</span>
+                    </div>
+                    <div class="stat-label">Propriedades Beneficiadas</div>
+                    <div class="stat-description">Transformação sustentável em andamento em todo Brasil</div>
+                </div>
+
+                <div class="stat-card" data-target="50000">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">K</span>
+                    </div>
+                    <div class="stat-label">Hectares Transformados</div>
+                    <div class="stat-description">Área em transição positiva para sustentabilidade</div>
+                </div>
+
+                <div class="stat-card" data-target="70">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="stat-label">Redução de Carbono</div>
+                    <div class="stat-description">Em relação ao sistema convencional tradicional</div>
+                </div>
+
+                <div class="stat-card" data-target="35">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="stat-label">Aumento de Lucro Médio</div>
+                    <div class="stat-description">Retorno comprovado em 2 anos com nossas soluções</div>
+                </div>
+
+                <div class="stat-card" data-target="15">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">+</span>
+                    </div>
+                    <div class="stat-label">Anos de Liderança</div>
+                    <div class="stat-description">Experiência e conhecimento consolidados no mercado</div>
+                </div>
+
+                <div class="stat-card" data-target="98">
+                    <div class="stat-number">
+                        <span class="counter">0</span>
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="stat-label">Satisfação de Clientes</div>
+                    <div class="stat-description">Taxa de recomendação e retenção comprovada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS SECTION -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos de Clientes</h2>
+                <p class="section-subtitle">Histórias reais de transformação e sucesso na sustentabilidade agrícola</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="depoimentos-carousel">
+                <div class="depoimento-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "Em apenas um ano, conseguimos aumentar nossa produção em 32% enquanto reduzíamos custos em 40%. 
+                        O sistema de irrigação inteligente foi revolucionário para nossa propriedade. Antes gastávamos muito com água, 
+                        agora economizamos e produzimos melhor. Recomendo Agro Forte para todos os produtores!"
+                    </p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">JC</div>
+                        <div class="author-info">
+                            <h4>João Carlos Silva</h4>
+                            <p>Produtor de Soja e Milho - Mato Grosso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "A Agro Forte nos ajudou a conquistar a certificação orgânica em 18 meses e hoje vendemos com prêmio de 45% 
+                        acima do preço convencional. Nossos produtos são procurados por redes premium em São Paulo e Rio. 
+                        Melhor investimento que fizemos na propriedade!"
+                    </p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">MB</div>
+                        <div class="author-info">
+                            <h4>Maria Beatriz Costa</h4>
+                            <p>Produtora de Frutas Orgânicas - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "Com a agricultura de precisão e os drones, conseguimos detectar problemas rapidamente e intervir antes 
+                        que afete a safra. O app deles é fantástico, controlo tudo pelo celular mesmo estando fora da propriedade. 
+                        Recomendo para todos os produtores que querem produzir mais com mais eficiência!"
+                    </p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">RP</div>
+                        <div class="author-info">
+                            <h4>Roberto Pereira</h4>
+                            <p>Produtor de Café Especial - Minas Gerais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "Os custos com energia caíram drasticamente após instalar os painéis solares recomendados pela Agro Forte. 
+                        Ainda estou vendendo energia para a rede nacional e gerando renda extra impressionante. 
+                        O payback foi muito mais rápido que esperado. Obrigado Agro Forte por transformar meu negócio!"
+                    </p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">AR</div>
+                        <div class="author-info">
+                            <h4>Andréia Rodrigues</h4>
+                            <p>Produtora de Grãos - Rio Grande do Sul</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS E PREÇOS -->
+    <section id="planos" class="planos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planos e Preços</h2>
+                <p class="section-subtitle">Escolha o plano perfeito para sua propriedade e tamanho de operação</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="planos-grid">
+                <div class="plano-card">
+                    <div class="plano-header">
+                        <h3>Starter</h3>
+                        <p class="plano-desc">Ideal para pequenos produtores</p>
+                    </div>
+                    <div class="plano-preco">
+                        <span class="valor">R$ 299</span>
+                        <span class="periodo">/mês</span>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fas fa-check"></i> Até 50 hectares monitorados</li>
+                        <li><i class="fas fa-check"></i> 5 sensores IoT inclusos</li>
+                        <li><i class="fas fa-check"></i> App mobile versão básica</li>
+                        <li><i class="fas fa-check"></i> Relatórios mensais detalhados</li>
+                        <li><i class="fas fa-times"></i> Suporte apenas via email</li>
+                        <li><i class="fas fa-times"></i> Acesso a drones e IA</li>
+                    </ul>
+                    <button class="btn btn-outline">Começar Agora</button>
+                </div>
+
+                <div class="plano-card featured">
+                    <div class="plano-badge">Mais Popular</div>
+                    <div class="plano-header">
+                        <h3>Professional</h3>
+                        <p class="plano-desc">Para produtores em crescimento</p>
+                    </div>
+                    <div class="plano-preco">
+                        <span class="valor">R$ 799</span>
+                        <span class="periodo">/mês</span>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fas fa-check"></i> Até 200 hectares monitorados</li>
+                        <li><i class="fas fa-check"></i> 20 sensores IoT inclusos</li>
+                        <li><i class="fas fa-check"></i> App mobile versão completa</li>
+                        <li><i class="fas fa-check"></i> Relatórios semanais + insights IA</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7 por telefone/chat</li>
+                        <li><i class="fas fa-check"></i> 1 voo de drone por mês grátis</li>
+                    </ul>
+                    <button class="btn btn-primary">Escolher Plano</button>
+                </div>
+
+                <div class="plano-card">
+                    <div class="plano-header">
+                        <h3>Enterprise</h3>
+                        <p class="plano-desc">Para grandes operações agrícolas</p>
+                    </div>
+                    <div class="plano-preco">
+                        <span class="valor">Customizado</span>
+                        <span class="periodo">Solicite orçamento</span>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fas fa-check"></i> Acima de 500 hectares</li>
+                        <li><i class="fas fa-check"></i> Sensores ilimitados</li>
+                        <li><i class="fas fa-check"></i> Integração completa com sistemas</li>
+                        <li><i class="fas fa-check"></i> Relatórios em tempo real</li>
+                        <li><i class="fas fa-check"></i> Suporte técnico dedicado 24/7</li>
+                        <li><i class="fas fa-check"></i> Consultoria agrônoma contínua</li>
+                    </ul>
+                    <button class="btn btn-outline">Fale com Vendas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre Agro Forte e agricultura sustentável</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto tempo leva para ver resultados com Agro Forte?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            A maioria dos nossos clientes começa a ver resultados tangíveis em 2-3 meses. Melhorias na umidade e 
+                            fertilidade do solo são detectadas quase imediatamente com os sensores IoT, e aumentos significativos de 
+                            produtividade (25-40%) são visíveis na primeira colheita completa após implementação das práticas regenerativas. 
+                            Redução de custos é imediata desde o primeiro mês.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qual é o investimento inicial necessário?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            O investimento varia conforme tamanho da propriedade e soluções escolhidas. Temos pacotes a partir de R$ 5 mil 
+                            para pequenas propriedades até soluções enterprise customizadas. O retorno sobre investimento (ROI) se dá em média 
+                            em 18-24 meses através da redução de custos operacionais e aumento de produção. Oferecemos linhas de crédito rural 
+                            subsidiadas e financiamento com instituições parceiras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>A solução funciona em qualquer tipo de cultura agrícola?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Sim! Nossas soluções foram desenvolvidas e testadas para trabalhar com diversas culturas: grãos (soja, milho, 
+                            trigo, arroz), frutas, hortaliças, café, cana-de-açúcar, cacau, algodão e até pecuária. Personalizamos conforme 
+                            a cultura específica, considerando ciclos, demandas hídricas e padrões de crescimento. Nossa base de dados inclui 
+                            milhões de hectares de diversas culturas para referência.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona o suporte técnico da Agro Forte?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Oferecemos suporte 24/7 via telefone, WhatsApp, email e chat em tempo real. Além disso, um engenheiro agrônomo 
+                            dedicado (conforme plano) faz visitas periódicas à sua propriedade para orientação técnica prática, treinamento 
+                            de equipe e ajustes nas soluções. Respondemos emergências agrícolas em até 2 horas com recomendações de ação.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>É possível financiar os equipamentos e tecnologias?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Sim! Temos parcerias com instituições financeiras para financiamento de equipamentos em 24-60 meses com juros 
+                            competitivos. Também trabalhamos com linhas de crédito rural subsidiadas pelo governo (ABC, PRONAF, etc.) e 
+                            programas de financiamento verde. Nosso time de finanças ajuda a estruturar a melhor opção para sua propriedade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Agro Forte é acessível para pequenos produtores?</span>
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutamente! Temos planos específicos para pequenos produtores (Starter) com valores mensais a partir de R$ 299 
+                            e funcionalidades escaláveis. Começar é simples: iniciamos com diagnóstico gratuito da propriedade, implementação 
+                            gradual conforme orçamento, e acompanhamento constante. Muitos pequenos produtores hoje são nossos melhores 
+                            clientes porque conseguem lucrar mais com menos investimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG/RECURSOS -->
+    <section id="recursos" class="recursos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos e Conteúdo Educativo</h2>
+                <p class="section-subtitle">Aprenda sobre agricultura sustentável com nossos especialistas</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="recursos-grid">
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Guia Completo de Agricultura Regenerativa</h3>
+                    <p>
+                        Descubra os princípios fundamentais da regeneração de solo, como implementar em sua propriedade, 
+                        erros comuns a evitar e cronograma de implementação passo a passo.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">E-book Gratuito</span>
+                        <a href="#" class="recurso-link">Baixar <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3>Webinar: IoT na Agricultura Moderna</h3>
+                    <p>
+                        Especialistas compartilham casos de sucesso reais, demonstram tecnologia na prática, respondem dúvidas 
+                        sobre implementação e tendências futuras de tecnologia agrícola sustentável.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">Vídeo Gravado</span>
+                        <a href="#" class="recurso-link">Assistir <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Relatório: Impacto Ambiental 2024</h3>
+                    <p>
+                        Dados comprovados sobre redução de carbono, conservação hídrica, recuperação da biodiversidade e 
+                        resultados econômicos em nossas propriedades parceiras ao longo de 2024.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">Relatório PDF</span>
+                        <a href="#" class="recurso-link">Ler <i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Dicas Semanais de Sustentabilidade</h3>
+                    <p>
+                        Receba práticas simples e testadas para melhorar sustentabilidade em sua rotina agrícola, 
+                        aumentar produtividade e reduzir custos. Uma dica nova toda terça-feira na sua caixa de emails.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">Newsletter Gratuita</span>
+                        <a href="#" class="recurso-link">Assinar <i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Série: 30 Dias para Transformar sua Fazenda</h3>
+                    <p>
+                        Um programa completo de 30 dias com ações práticas diárias, vídeos tutoriais, documentos de referência 
+                        e mentoria online com especialista dedicado. Transforme sua propriedade em um mês.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">Curso Prático</span>
+                        <a href="#" class="recurso-link">Começar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-imagem">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Calculadora de ROI Interativa</h3>
+                    <p>
+                        Simule o retorno do seu investimento em soluções sustentáveis de forma realista. Insira dados da sua 
+                        propriedade e veja projeções de economia, aumento de produção e lucro adicional em 2, 3 e 5 anos.
+                    </p>
+                    <div class="recurso-footer">
+                        <span class="recurso-tipo">Ferramenta Online</span>
+                        <a href="#" class="recurso-link">Usar <i class="fas fa-calculator"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO SECTION -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p class="section-subtitle">Transforme sua produção agrícola para um futuro sustentável hoje mesmo</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Endereço Principal</h4>
+                            <p>Av. Agrícola nº 1234<br>São Paulo, SP - 01310-100<br>Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Telefone para Suporte</h4>
+                            <p>+55 (11) 98765-4321<br>+55 (11) 3456-7890<br>Horário: 24h/7 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Canais de Email</h4>
+                            <p>contato@agroforte.com.br<br>vendas@agroforte.com.br<br>suporte@agroforte.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 08:00 - 18:00<br>Sábado: 09:00 - 13:00<br>Suporte 24/7 para emergências</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome Completo" required class="form-input" id="name">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required class="form-input" id="email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" placeholder="Seu Telefone com DDD" required class="form-input" id="phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Tamanho da Propriedade (Hectares)" required class="form-input" id="property">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <select required class="form-input" id="interest">
+                            <option value="">Qual é seu interesse principal?</option>
+                            <option value="agua">Gestão Inteligente de Água</option>
+                            <option value="solo">Regeneração de Solo</option>
+                            <option value="energia">Energia Limpa Solar/Eólica</option>
+                            <option value="precisao">Agricultura de Precisão com IA</option>
+                            <option value="organico">Certificação Orgânica</option>
+                            <option value="economia">Economia Circular</option>
+                            <option value="outro">Solicitar diagnóstico completo</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea placeholder="Conte-nos sobre seus desafios agrícolas e metas de sustentabilidade" required class="form-input textarea" id="message" rows="5"></textarea>
+                        <i class="fas fa-message"></i>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Concordo em receber contato da Agro Forte e aceito os termos e política de privacidade</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Agro Forte - Futuro Sustentável</h4>
+                    <p>
+                        Transformando a agricultura brasileira com soluções sustentáveis inovadoras. 
+                        Equilibrando produção com meio ambiente desde 2009.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="footer-social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Agro Forte</a></li>
+                        <li><a href="#solucoes">Nossas Soluções</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#contato">Contato Direto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog de Sustentabilidade</a></li>
+                        <li><a href="#">Documentação Técnica</a></li>
+                        <li><a href="#">Suporte ao Cliente</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Webinars e Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informações Legais</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Conformidade LGPD</a></li>
+                        <li><a href="#">Relatório de Sustentabilidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> para a sustentabilidade agrícola e o futuro do planeta</p>
+            </div>
         </div>
     </footer>
+
+    <!-- NOTIFICATION -->
+    <div id="notification" class="notification"></div>
 
     <script src="script.js"></script>
 </body>
